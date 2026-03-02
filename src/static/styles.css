@@ -76,8 +76,10 @@ section h3 {
 
 .participants-section {
   margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid #ddd;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .participants-section h5 {
@@ -91,12 +93,18 @@ section h3 {
 .participants-list {
   margin: 0;
   padding-left: 18px;
+  max-height: 120px;
+  overflow-y: auto;
 }
 
 .participants-list li {
   margin-bottom: 4px;
   color: #333;
   word-break: break-word;
+}
+
+.participants-list li::marker {
+  color: #0066cc;
 }
 
 .participants-empty {
